@@ -1,0 +1,66 @@
+
+
+// для родителя необходимо указвать для флекс элемента 
+.block__body{
+	min-width: 0;
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.image-slide {
+	padding: toRem(30) toRem(0) toRem(30) toRem(0);
+}
+.image-slider__image {
+text-align: center;
+}
+.image-slider__image img{
+max-width: 100%;
+}
+.name-slider{
+	// height: toRem(700);
+	overflow: hidden;
+	position: relative;
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
+.name-slider .swiper-button-prev::after,
+.name-slider .swiper-button-next::after {
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+}
+
+//пагинация
+.name-slider .swiper-pagination{
+	bottom:0;
+}
+//Буллеты 
+.name-slider .swiper-pagination-bullet{
+	width: toRem(20);
+	height: toRem(20);
+	line-height: 20px;
+	font-size: toRem(14);
+	background-color: #ffb0b0;
+}
+//Фракция 
+.name-slider .swiper-pagination-fraction{
+	font-size: toRem(20);
+	color: #000000;
+}
+//Прогрессбар 
+.name-slider .swiper-pagination-progressbar-fill{
+	background-color: #22aa00;
+}
+//Скролл 
+.name-slider .swiper-scrollbar-drag{
+	cursor: pointer;
+	background-color: #ff0000;
+}

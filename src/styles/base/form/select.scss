@@ -1,0 +1,45 @@
+.select {
+	position: relative;
+	width: 100%;
+	// border: 1px solid rgb(0, 0, 0);
+	border-radius: toRem(2);
+
+}
+.form__select{
+		border: toRem(1) solid #000;
+
+}
+.select::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid rgb(0, 0, 0);
+	position: absolute;
+	top: 50%;
+	transform: translate(0px,-50%);
+	right: toRem(10);
+	z-index: 1;
+	pointer-events: none;
+}
+
+.select select {
+	background: none;
+	border: toRem(1) solid #b3b3b3;
+	border-radius: toRem(2);
+	appearance: none;
+	-webkit-appearance: none;
+	font-family: inherit;
+	font-size: toRem(14);
+	color: #000;
+	padding: toRem(4) toRem(23) toRem(4) toRem(16);
+	display: block;
+	width: 100%;
+}
+
+.select select:focus{
+	outline: 0;
+	border-color: #3936ff;
+}

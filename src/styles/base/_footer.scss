@@ -1,0 +1,216 @@
+.footer {
+	border-radius: toRem(50) toRem(50) toRem(0) toRem(0);
+	background-color: var(--orange);
+	@include adaptiveValue("padding-top", 50, 30, 0,$maxWidth, 390 );
+	@include adaptiveValue("padding-bottom", 50, 30, 0,$maxWidth, 390 );
+	// .footer_container
+	&__copywriter__container{
+		margin-top: toRem(20);
+		color: var(--white);
+		font-size: toRem(14);
+		font-family: "Raleway",sans-serif;
+		font-weight: 500;
+		letter-spacing: toRem(0);
+		line-height: 118%;
+		@include adaptiveValue("font-size", 14, 11, 0,$maxWidth, 390 );
+		@media (max-width:em($mobile)){
+			margin-top: toRem(40);
+		}
+	}
+	&_container {
+		color: var(--white);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: toRem(10);
+		row-gap: toRem(20);
+		@media (max-width:em($mobile)){
+			 flex-direction: column; 
+			 align-items: center;
+		}
+	}
+	// .footer__title
+	&__title {
+		color: #fff;
+		flex: 0 0 40.9%; /* 505/1240 */
+		&:not(:last-child) {
+		margin-bottom: toRem(0);
+		}
+		@media (max-width:em(1050)){
+			flex:1 0 40.9%; /* 505/1240 */
+		}
+		@media (max-width:em($mobile)){
+			 text-align: center; 
+		}
+	}
+	// .footer__social
+	&__social {
+		padding-inline: toRem(40);
+		padding-block: toRem(23);
+		display: flex;
+		column-gap: toRem(67);
+		align-items: end;
+		flex-grow: 1;
+		height: fit-content;
+		@media (max-width: em(1070)){
+			padding-inline: toRem(20);
+			padding-block: toRem(10);
+		}
+	}
+	// .footer__nav
+	&__nav {
+		flex: 0 0 32.258065%; /* 400/1240 */
+		min-width: toRem(327);
+		@media (max-width:em($mobile)){
+			min-width: auto;
+		}
+	}
+	// .footer__list
+	&__list {
+		display: flex;
+		column-gap: toRem(7);
+		justify-content: space-between;
+		align-items: start;
+		@media (max-width:em($mobile)){
+		align-items: center;
+		text-align: center;
+		column-gap: toRem(40);
+		padding-top: toRem(28);	 
+		flex-direction: column; 
+		row-gap: toRem(10);
+		}
+	}
+	// .footer__list-column
+	&__list-column {
+	display: grid;
+	row-gap: toRem(20);
+	@media (max-width:em($mobile)){
+		row-gap: toRem(10);
+	}		
+	}
+	// .footer__li
+	&__li {
+	}
+	// .footer__link
+	&__link {
+		line-height: 118%;
+		position: relative;
+		@include adaptiveValue("font-size", 16, 15, 0, $maxWidth, 390);
+		&::before{
+			position: absolute;
+			content: '';
+			left: toRem(0);
+			bottom: toRem(0);
+			width: 0%;
+			height: toRem(1);
+			background: var(--white);
+		transition: all 0.4s ease 0s;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				&::before{
+				width: 100%;
+				}
+			}
+		}
+	}
+}
+.copywriter__link{
+	cursor: pointer;
+	color: var(--white);
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover){
+		&:hover{
+			color: var(--yellow);
+		}
+	}
+}
+.social-header {
+	// .social-header__telegram
+	&__telegram {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		&::after{
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: 50%;
+			width: toRem(72);
+			height: toRem(72);
+			border-radius: 50%;
+			background: var(--blue);
+			transform: translate(-47%, -50%);
+			z-index: 1;
+			transition: all 0.3s ease 0s;
+		
+		}
+		&::before{
+			font-size: toRem(30);
+			position: relative;
+			z-index: 3;
+		}
+		
+		@media (max-width: em(1070)){
+			&::before{
+				font-size: toRem(21);
+			}
+			&::after{
+				width: toRem(50);
+				height: toRem(50);  
+				}
+		}
+		@media (any-hover: hover){
+			&:hover{
+				&::after{
+					background: #155677;
+
+				}
+			}
+		}
+	}
+	// .social-header__wotsap
+	&__wotsap {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&::after{
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: 50%;
+			width: toRem(72);
+			height: toRem(72);
+			border-radius: 50%;
+			background: var(--green);
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			transition: all 0.3s ease 0s;
+		}
+		&::before{
+			font-size: toRem(36);
+			position: relative;
+			z-index: 3;
+		}
+		
+		@media (max-width: em(1070)){
+			&::after{
+				width: toRem(50);
+				height: toRem(50);  
+				}
+			&::before{
+				font-size: toRem(26);
+			}
+		}
+		@media (any-hover: hover){
+			&:hover{
+				&::after{
+					background: #2d7c08;
+
+				}
+			}
+		}
+	}
+	}
