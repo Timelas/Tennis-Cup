@@ -74,10 +74,7 @@
 		cursor: pointer;
 		position: relative;
 		z-index: 10;
-		margin-right: toRem(10);
-		margin-top: toRem(10);
-		margin-bottom: toRem(10);
-		margin-left: toRem(10);
+		margin: toRem(10) auto;
 		background: var(--yellow);
 		height: toRem(50);
 		width: toRem(185);
