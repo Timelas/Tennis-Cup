@@ -60,7 +60,7 @@ export default defineConfig(() => {
 			input: {
 			// перечисляем все наши доступные страницы
 			  main: resolve(__dirname, 'index.html'),
-			//   book: resolve(__dirname, 'pages/book/book.html'),
+			  rating: resolve(__dirname, 'pages/rating.html'),
 			},
 		
 			// output: {

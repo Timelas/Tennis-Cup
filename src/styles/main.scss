@@ -302,7 +302,6 @@ body._lock {
 .li{
 	&__inner{
 		background: var(--bg);
-		padding-block:toRem(17) ;
 		padding-left: toRem(58);
 		padding-right: toRem(93);
 		display: grid;
@@ -310,14 +309,25 @@ body._lock {
 		margin-left: toRem(23);
 		max-width: toRem(479);
 		min-height: toRem(70);
+		position: relative;
+		border-radius: toRem(0) toRem(35) toRem(35)	toRem(0);
+		.border-svg{
+		position: absolute;
+		border-radius: toRem(0) 10% 10%	toRem(0);
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 96%;
+		z-index: 1;
+		}
 		@media (max-width: em(660)){
-			max-width: toRem(327);
-			padding-block:toRem(4) ;
+			padding-right: toRem(25);
 		}
 		@media (max-width: em(385)){
 			max-width: toRem(260);
 			padding-left: toRem(30);
-			padding-right: toRem(35);
+			padding-right: toRem(10);
 			min-height: toRem(60);
 		}
 		&:nth-child(2) {
@@ -387,24 +397,25 @@ body._lock {
 		color: var(--green-2);
 		font-family: "Raleway",sans-serif;
 		font-weight: 500;
-		position: relative;
+		padding-block:toRem(17) ;
 		@include adaptiveValue("font-size", 18, 15, 0, $maxWidth, 390);
 		&::before{
 			position: absolute;
 			content: '';
-			left: toRem(-75);
+			left: toRem(-22);
 			top: 50%;
 			transform: translate(0px, -50%);
 			width: toRem(45);
 			height: toRem(45);
 			background: url('/src/assets/img/edventage/ball.png') no-repeat;
 			@media (max-width: em(660)){
-				left: toRem(-86);	  
+				left: toRem(-28);	  
 			}
 			@media (max-width: em(385)){
-				left: toRem(-65);  
+				left: toRem(-32);  
 			}
 		}
+
 	}
 }
 .header {
@@ -818,6 +829,7 @@ body._lock {
 		// .fag__title
 		&__title {
 			max-width: toRem(295);
+			opacity: 0.4;
 			@media (max-width:em($mobile)){
 			opacity: 1;
 			}

@@ -5,6 +5,7 @@
 
 // подключаем стили
 import  "/src/styles/main.scss";
+import  "/pages/rating.scss";
 
 import "/src/styles/base/_header.scss";
 import "/src/styles//base/_footer.scss";
