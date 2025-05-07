@@ -19,7 +19,10 @@
 	&__container-min {
 
 		height: 100svh;
-		display: grid;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
 		place-items: center;
 		.header__logo-text{
 		color: var(--black);
