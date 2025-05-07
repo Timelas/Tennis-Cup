@@ -818,7 +818,6 @@ body._lock {
 		// .fag__title
 		&__title {
 			max-width: toRem(295);
-			opacity: 0.4;
 			@media (max-width:em($mobile)){
 			opacity: 1;
 			}
