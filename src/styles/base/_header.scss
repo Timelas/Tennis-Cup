@@ -39,6 +39,7 @@
 	// .header__logo-text
 	&__logo-text {
 		display: flex;
+		width: max-content;
 		position: relative;
 		z-index: 3;
 		align-items: center;
