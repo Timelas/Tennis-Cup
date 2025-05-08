@@ -49,13 +49,14 @@
 		padding-inline: toRem(40);
 		padding-block: toRem(23);
 		display: flex;
-		column-gap: toRem(40);
+		column-gap: toRem(67);
 		align-items: center;
 		flex-grow: 1;
 		height: fit-content;
 		@media (max-width: em(1070)){
 			padding-inline: toRem(20);
 			padding-block: toRem(10);
+			column-gap: toRem(40);
 		}
 	}
 	// .footer__nav
