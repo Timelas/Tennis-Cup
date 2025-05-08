@@ -37,7 +37,7 @@
 			padding: toRem(9) toRem(12.5); 
 		}
 		&:not(:last-child) {
-			margin-bottom: toRem(50);
+			margin: 0 auto toRem(50);
 		}
 		}
 	}
@@ -46,7 +46,6 @@
 
 	&__contant {
 		text-align: center;
-		padding-bottom: toRem(50);
 	}
 
 	// .rating__title
@@ -99,6 +98,7 @@
 		@media (max-width:em($mobile)){
 			 flex-direction: column;
 			 row-gap: toRem(10); 
+
 		}
 	}
 
