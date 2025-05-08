@@ -29,13 +29,13 @@ export default defineConfig(() => {
 		 Inspect(),
 		 ViteImageOptimizer({
 			png: {
-				quality: 40,
+				quality: 70,
 			 },
 			 jpeg: {
-				quality: 40,
+				quality: 70,
 			 },
 			 jpg: {
-				quality: 40,
+				quality: 70,
 			 },
 			 tiff: {
 				quality: 40,

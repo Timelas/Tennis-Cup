@@ -67,6 +67,7 @@
 	&__bg{
 		display: flex;
 		flex-grow: 1;
+		padding-right: toRem(10);
 		border-radius: toRem(0) toRem(50) toRem(50) toRem(0);
 		background: url("/src/assets/img/header/Subtract.png") no-repeat;
 	}

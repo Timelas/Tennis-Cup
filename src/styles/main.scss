@@ -79,7 +79,6 @@ body._lock {
 	border-radius: toRem(0) toRem(0) toRem(100) toRem(100);
 	overflow: hidden;
 	&.-ibg{
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 		@media (max-width:em($tablet)){
 			border-radius: toRem(0) toRem(0) toRem(67) toRem(67);
 		}
@@ -101,6 +100,7 @@ body._lock {
 	&__title {
 		font-family: "Unbounded",sans-serif;
 		font-weight: 900;
+		text-transform: uppercase;
 		letter-spacing: toRem(0);
 		line-height: 118%;
 		@include adaptiveValue("font-size", 55, 30, 0, $maxWidth, 390 );
@@ -213,6 +213,13 @@ body._lock {
 }
 //============================= advantage ===========================================================================================================================
 .advantage {
+	.header__btn-contacts{
+		margin-left: toRem(0);
+		@media (max-width: em($tablet)){
+			margin: 0 auto;
+			  
+		}
+	}
 	@include adaptiveValue("padding-top", 100, 50, 0, $maxWidth, 390);
 	@include adaptiveValue("padding-bottom", 100, 20, 0, $maxWidth, 390);
 	// .advantage__container
@@ -243,11 +250,11 @@ body._lock {
 		&::before{
 			position: absolute;
 			content: '';
-			top: toRem(-350);
+			top: toRem(-420);
 			z-index: -1;
-			left: toRem(-40);
-			width: toRem(326);
-			height: toRem(305);
+			left: toRem(-50);
+			width: toRem(426);
+			height: toRem(405);
 			background: url('/src/assets/img/edventage/cort_svg.svg') no-repeat;
 			background-size: contain;
 			@media (max-width: em($tablet)){
@@ -466,7 +473,7 @@ body._lock {
 		border-radius: toRem(50);
 		overflow: hidden;
 		min-height: toRem(259);
-		padding: toRem(40) toRem(43) toRem(54) toRem(27);
+		padding: toRem(40) toRem(30) toRem(30) toRem(25);
 		@media (max-width: em($mobile)){
 		min-height: auto;
 		column-gap: toRem(19);
@@ -489,7 +496,7 @@ body._lock {
 	&__inner-img {
 		border: toRem(1) solid transparent;
 		flex: 1 0 23.7%;
-		background-image: url('/src/assets/img/plan/bj_cart.jpg');
+		background-image: url('/src/assets/img/plan/bj_cart-png.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 70%;
@@ -518,7 +525,7 @@ body._lock {
 	// .plan__inner-3
 	&__inner-3 {
 		color: var(--green-2);
-		flex: 1 0 27.9%;
+		flex: 1 0 26%;
 		@media (max-width: em($tablet)){
 			flex: 1 1 45%;
 		}
@@ -529,7 +536,7 @@ body._lock {
 	// .plan__inner-4
 	&__inner-4 {
 		color: var(--green-2);
-		flex: 1 0 27.9%;
+		flex: 1 0 26%;
 		@media (max-width: em($tablet)){
 			flex: 1 1 45%;
 		}
@@ -698,7 +705,7 @@ body._lock {
 }
 	// .sponsor__content
 	&__content {
-		padding-block: toRem(20);
+		padding-block: toRem(37);
 		padding-inline: toRem(50);
 		@media (max-width: em($tablet)){
 			border: toRem(1) solid var(--green-2);
@@ -829,7 +836,6 @@ body._lock {
 		// .fag__title
 		&__title {
 			max-width: toRem(295);
-			opacity: 0.4;
 			@media (max-width:em($mobile)){
 			opacity: 1;
 			}
