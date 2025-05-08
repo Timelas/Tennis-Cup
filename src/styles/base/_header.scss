@@ -54,6 +54,7 @@
 		border: toRem(1) solid var(--white);
 		font-size: toRem(30);
 		transition: all 0.3s ease 0s;
+		justify-content: center;
 		@media (max-width:em($tablet)){
 			font-size: toRem(18);
 		padding: toRem(9) toRem(12.5);
