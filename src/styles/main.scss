@@ -627,6 +627,78 @@ body._lock {
 	&__btn-contacts {
 	}
 }
+
+//============================== registration==========================================================================================================================
+.registration {
+	@include adaptiveValue("padding-top", 0, 30, 0, $maxWidth, $minWidth);
+	@include adaptiveValue("padding-bottom", 100, 50, 0, $maxWidth, $minWidth);
+	.header__btn-contacts {
+		margin:  0 auto;
+	}
+}
+.registration__container {
+}
+.registration__wrapper{
+	border-radius: toRem(50);
+	overflow: hidden;
+	background: url('/src/assets/img/registration/bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: 50% 20%;
+	@media (max-width:em($mobile)){
+		background-position: 50%;
+	}
+}
+
+.registration__content {
+	display: grid;
+	row-gap: toRem(40);
+	color:var(--white);
+	font-family: "Unbounded",sans-serif;
+	font-weight: 900;
+	line-height: 118%;
+	letter-spacing: toRem(0);
+	text-transform: uppercase;
+	@include adaptiveValue("font-size", 32, 22, 0, $maxWidth, 390);
+	@include adaptiveValue("padding-block", 98.73, 30.27, 0, $maxWidth, 390);
+	@include adaptiveValue("padding-inline", 50, 22.71, 0, $maxWidth, 390);
+	@include adaptiveValue("max-inline-size", 545.59, 345, 0, $maxWidth, 390);
+	@media (max-width:em($mobile)){
+	row-gap: toRem(246);
+	text-align: center;
+	margin: 0 auto;
+	}
+	@media (max-width: em(385)){
+		font-size: toRem(18);
+		max-inline-size: toRem(290);  
+	}
+}
+.content-registration {
+}
+.content-registration__date {
+}
+.content-registration__date p span{
+	color: var(--yellow-2)
+}
+.content-registration__bottom {
+	display: grid;
+	row-gap: toRem(40);
+}
+.bottom-registration {
+}
+.bottom-registration__content {
+
+}
+.bottom-registration__content p span{
+	color: var(--yellow-2)
+}
+
+.bottom-registration__btn{
+	@media (min-width:em($mobile)){
+	justify-self: left;
+	}
+}
+.registration__btn-contacts {
+}
 //================ sponsor ========================================================================================================================================
 .sponsor {
 	@include adaptiveValue("padding-top", 47, 24, 0,$maxWidth, 390 );
