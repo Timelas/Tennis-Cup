@@ -1015,6 +1015,33 @@ body._lock {
 				padding-right: toRem(50);
 			}
 		}
+
+		&__btn-contacts {
+			cursor: pointer;
+			position: relative;
+			z-index: 10;
+			background: var(--yellow);
+			height: toRem(50);
+			width: 100%;
+			border-radius: toRem(50);
+			border: toRem(1) solid transparent;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: toRem(20);
+			line-height: 118%;
+			letter-spacing: toRem(0);
+			color: var(--black);
+			font-family: "Inter",sans-serif;
+			font-weight: 700;
+			transition: all 0.3s ease 0s;
+			margin-top: 20px;
+			@media (any-hover: hover){
+				&:hover{
+					font-size: toRem(24);
+				}
+			}
+		}
 }
 .spoller {
 		// .spoller__column
