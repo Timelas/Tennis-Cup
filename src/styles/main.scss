@@ -1087,6 +1087,10 @@ body._lock {
 	background-image: url("/src/assets/img/partner.svg");
 	width: 232px;
 	height: 72px;
+	@media (max-width:em($mobile)){
+		width: 134px;
+		height: 41px;	
+	}
 }
 
 .no-margin {
