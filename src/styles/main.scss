@@ -1083,8 +1083,7 @@ body._lock {
 }
 
 .partner__img {
-	background-repeat: no-repeat;
-	background-image: url("/src/assets/img/partner.svg");
+	object-fit: cover;
 	width: 232px;
 	height: 72px;
 	@media (max-width:em($mobile)){
