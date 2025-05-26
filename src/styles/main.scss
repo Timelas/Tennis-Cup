@@ -1030,6 +1030,7 @@ body._lock {
 }
 
 .partner {
+
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
@@ -1037,6 +1038,7 @@ body._lock {
 
 
 	@media (max-width:em($mobile)){
+		margin-top: 40px;
 		flex-direction: column;
 	}
 }
