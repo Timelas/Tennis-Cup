@@ -1083,8 +1083,8 @@ body._lock {
 }
 
 .partner__img {
-	display: block;
-	object-fit: cover;
+	background-repeat: no-repeat;
+	background-image: url("/src/assets/img/partner.svg");
 	width: 232px;
 	height: 72px;
 }
