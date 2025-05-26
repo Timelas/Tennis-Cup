@@ -702,30 +702,9 @@ body._lock {
 //================ sponsor ========================================================================================================================================
 .sponsor {
 	@include adaptiveValue("padding-top", 47, 24, 0,$maxWidth, 390 );
-	@include adaptiveValue("padding-bottom", 55, 20, 0,$maxWidth, 390 );
+	@include adaptiveValue("padding-bottom", 100, 20, 0,$maxWidth, 390 );
 
 	// .sponsor__container
-	&__container {
-		position: relative;
-		&::before{
-			position: absolute;
-			content: '';
-			right: toRem(200);
-			bottom: toRem(-200);
-			width: toRem(421);
-			height: toRem(200);
-			background: url('/src/assets/img/sponsor/text_decor.png') no-repeat;
-			background-size: contain;
-			background-position: center;
-			z-index: -1;
-			@media (max-width:em($tablet)){
-			bottom: toRem(-125);
-			right: toRem(10);
-			width: toRem(257);
-			height: toRem(122);
-			}
-		}
-	}
 	&__content-inner {
 		position: relative;
 		border-radius: toRem(50);
@@ -1048,4 +1027,67 @@ body._lock {
 		&__column {
 			flex: 1 1 50%;
 		}
+}
+
+.partner {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+
+
+
+	@media (max-width:em($mobile)){
+		flex-direction: column;
+	}
+}
+
+.partner__title {
+	margin-bottom: 0 !important;
+}
+
+.partner__container {
+	position: relative;
+	&::before{
+		position: absolute;
+		content: '';
+		right: toRem(-5);
+		bottom: toRem(-200);
+		width: toRem(421);
+		height: toRem(200);
+		background: url('/src/assets/img/sponsor/text_decor.png') no-repeat;
+		background-size: contain;
+		background-position: center;
+		z-index: -1;
+		@media (max-width:em($tablet)){
+		bottom: toRem(-125);
+		right: toRem(5);
+		width: toRem(257);
+		height: toRem(122);
+		}
+	}
+}
+.partner__info {
+	border: 1px solid #9e5932;
+	border-radius: 50px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 715px;
+
+
+	@media (max-width:em($mobile)){
+		flex-direction: column;
+		padding: 30px;
+	}
+}
+
+.partner__img {
+	object-fit: contain;
+	width: 232px;
+	height: 72px;
+}
+
+.no-margin {
+	margin: 0 !important;
 }
